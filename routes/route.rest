@@ -1,0 +1,39 @@
+//get all 
+
+GET http://localhost:6000/students
+
+###
+// request for sortone
+GET http://localhost:6000/students/60c088175c2b526e63bc6a95
+
+
+###
+
+// add data to schema
+
+POST  http://localhost:6000/students
+Content-Type: application/json
+
+{
+    
+    "name":"Vishnu V",
+    "departments":"css"
+}
+
+
+### 
+
+// schema delete
+
+DELETE http://localhost:6000/students/60c0864c1350fe687c910337
+
+### 
+
+// update schema
+
+PATCH  http://localhost:6000/students/60c088175c2b526e63bc6a95
+Content-Type: application/json
+
+{
+    "name": "kpn dev"
+}
